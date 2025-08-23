@@ -53,9 +53,7 @@ const CometShower = () => {
           style={{
             willChange: "transform",
             transform: `translate3d(0px, ${-scrollY / 5}px, 0px)`,
-            height: `${
-              limitHeight ? "100%" : `${document.body.scrollHeight + 500}px`
-            }`,
+            minHeight: "100vh",
           }}
         >
           <div className="star"></div>
